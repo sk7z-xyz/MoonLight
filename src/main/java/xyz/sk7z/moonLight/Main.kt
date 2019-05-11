@@ -13,7 +13,7 @@ fun main() {
 
     val regex = ".*$moonEmojis+.*".toRegex()
     if(userName.matches(regex)){
-        print("update")
+        println("update")
         userName = userName.replace(moonEmojis, getTodayMoonEmoji())
     }else{
         println("add")
